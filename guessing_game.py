@@ -17,17 +17,18 @@ def first_number_checker (n1,n2):
 def random_number_generator(a,b):
     return random.randint(a,b)
 
+def main ():
+    # ask computer to genrate rando number
+    computer = random_number_generator(1,100)
 
-# ask computer to genrate rando number
-computer = random_number_generator(1,100)
-
-for i in range(1,10):
-    # please ask user to a nuber from 1 to 100
-    user = int(input("please pic a number 1 to 100:"))
-    apple = first_number_checker(user,computer)
-    if apple ==True:
-        break
-     
-print("the number was",computer)
+    for i in range(1,10):
+        # please ask user to a nuber from 1 to 100
+        user = int(input("please pic a number 1 to 100:"))
+        apple = first_number_checker(user,computer)
+        if apple ==True:
+            break
+        
+    print("the number was",computer)
 
 
+main()
