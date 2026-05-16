@@ -1,6 +1,4 @@
 import turtle
-from player import Player
-from cars import Car
 import random
 
 player = Player()
